@@ -1,0 +1,115 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+<section id="box">
+	<div id="pequeño-nav">
+		☰ MENÚ
+	</div>
+	<div id="box-nav">
+			<a href="">Sobre Mi</a>
+			<a href="">Projects</a>
+			<a href="">Titulos</a>
+			<a href="">Trabajos</a>
+	</div>
+</section>
+
+<style>
+	#box-nav{
+		background: rgb(48, 45, 45, 0.7);
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+		display: flex;
+		justify-content: space-around;
+		margin: 1% 35% 1% 35%;
+		padding: 0.8%;
+		border-radius: 50px;
+	}
+
+	#box-nav a{
+		text-decoration: none;
+		color:black;
+		text-transform:uppercase;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	#box-nav a:hover{
+		transform: scale(1.20); /* Aumenta ligeramente el tamaño */
+	}
+
+	@media (max-width: 1200px) {
+		#box-nav{
+			box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+			margin: 1.5% 15% 0% 15%;
+			padding: 1.5%;
+			border-radius: 50px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		#pequeño-nav{
+			background: rgb(48, 45, 45, 0.7);
+			font-size: 130%;
+			padding: 4% 0% 4% 4%;
+		}
+
+		#box-nav{
+			flex-direction: column;
+			margin: 0% 55% 1% 0%;
+			padding: 2% 0% 5% 4% ;
+			border-radius: 0%;
+			line-height: 3;
+			font-size: 110%;
+			box-shadow: none;
+		}
+	}
+
+	@media (max-width: 425px) {
+		#pequeño-nav{
+			background: rgb(48, 45, 45, 0.7);
+			font-size: 150%;
+			padding: 5% 0% 5% 5%;
+		}
+
+		#box-nav{
+			flex-direction: column;
+			margin: 0% 55% 1% 0%;
+			padding: 2% 0% 5% 5% ;
+			border-radius: 0%;
+			line-height: 3;
+			font-size: 120%;
+			box-shadow: none;
+		}
+	}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.getElementById('pequeño-nav');
+        const menuItems = document.getElementById('box-nav');
+
+        if (!menuIcon || !menuItems) {
+            console.warn("Elementos del menú no encontrados en el DOM.");
+            return;
+        }
+
+        function updateMenuDisplay() {
+            if (window.innerWidth <= 600) {
+                if (menuIcon) menuIcon.style.display = 'block';
+                if (menuItems) menuItems.style.display = 'none';
+            } else {
+                if (menuIcon) menuIcon.style.display = 'none';
+                if (menuItems) menuItems.style.display = 'flex';
+            }
+        }
+
+        menuIcon.addEventListener('click', () => {
+            if (menuItems) {
+                menuItems.style.display = (menuItems.style.display === 'flex') ? 'none' : 'flex';
+            }
+        });
+
+        window.addEventListener('resize', updateMenuDisplay);
+        updateMenuDisplay(); // Ejecutar al cargar la página
+    });
+</script>
