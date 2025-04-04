@@ -1,81 +1,4 @@
-#box-nav{
-    background: rgb(48, 45, 45, 0.7);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: space-around;
-    margin: 1% 35% 1% 35%;
-    padding: 0.8%;
-    border-radius: 50px;
-}
 
-#box-nav a{
-    text-decoration: none;
-    color:black;
-    text-transform:uppercase;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#box-nav a:hover{
-    transform: scale(1.20); /* Aumenta ligeramente el tamaño */
-}
-
-#SobreMi{
-    
-    padding: 5% 0% 5% 5%;
-    margin: 2% 20% 2% 20%;
-    border-radius: 50px;
-    font-size: 140%;
-}
-
-#SobreMi h2::after{
-    content: ".";
-    color: rgba(19, 59, 179);
-    font-size: 150%;
-
-}
-.boxsobremi1{
-    display: flex;
-    align-items: center;
-}
-
-#me{
-    width: 10%;
-    height: 10%;
-    margin: 0% 1% 0% 0%;
-    border-radius: 50%;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
-}
-
-#linkedin{
-    width: 17%;
-    height: 10%;
-    margin: 2% 0% 0% 1%;
-    border-radius: 20%;
-    box-shadow: 0 8px 15px rgba(19, 59, 179, 0.8);
-    justify-content: center;
-}
-
-#linkedin:hover{
-    transform: scale(1.20); /* Aumenta ligeramente el tamaño */
-}
-
-.texto{
-    margin: 0% 30% 0% 0%;
-}
-
-#Proyectos{
-    background: green;
-    padding: 5% 0% 5% 5%;
-    margin: 2% 20% 2% 20%;
-    border-radius: 50px;
-}
-
-#Titulos{
-    background: red;
-    padding: 5% 0% 5% 5%;
-    margin: 2% 20% 2% 20%;
-    border-radius: 50px;
-}
 
 #Trabajos{
     background: blue;
@@ -86,74 +9,13 @@
 }
 
 @media (max-width: 1200px) {
-    #box-nav{
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
-        margin: 1.5% 15% 0% 15%;
-        padding: 1.5%;
-        border-radius: 50px;
-    }
+    
 }
 
 @media (max-width: 600px) {
-    #pequeño-nav{
-        background: rgb(48, 45, 45, 0.7);
-        font-size: 130%;
-        padding: 4% 0% 4% 4%;
-    }
 
-    #box-nav{
-        flex-direction: column;
-        margin: 0% 55% 1% 0%;
-        padding: 2% 0% 5% 4% ;
-        border-radius: 0%;
-        line-height: 3;
-        font-size: 110%;
-        box-shadow: none;
-    }
 }
 
 @media (max-width: 425px) {
-    #pequeño-nav{
-        background: rgb(48, 45, 45, 0.7);
-        font-size: 150%;
-        padding: 5% 0% 5% 5%;
-    }
 
-    #box-nav{
-        flex-direction: column;
-        margin: 0% 55% 1% 0%;
-        padding: 2% 0% 5% 5% ;
-        border-radius: 0%;
-        line-height: 3;
-        font-size: 120%;
-        box-shadow: none;
-    }
-
-    #SobreMi{
-        padding: 5% 0% 5% 5%;
-        margin: 2% 5% 2% 5%;
-        border-radius: 50px;
-        font-size: 120%;
-    }
-
-    #me{
-        width: 20%;
-        height: 20%;
-        margin: 0% 1% 0% 0%;
-        border-radius: 50%;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
-    }
-
-    #linkedin{
-        width: 15%;
-        height: 20%;
-        margin: 2% 0% 0% 1%;
-        border-radius: 20%;
-        box-shadow: 0 8px 15px rgba(19, 59, 179, 0.8);
-        justify-content: center;
-    }
-    
-    .texto{
-        margin: 0% 5% 0% 0%;
-    }
 }

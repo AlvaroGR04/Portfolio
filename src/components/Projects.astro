@@ -1,0 +1,215 @@
+
+<div id="Projects">
+    <h1>Proyectos.</h1>
+    <div id="Projects-1">
+        <div class="box-size-projects-1">
+            <img src="/semana-santa.png" alt="Semana Santa de Sevilla" id="img-proyecto1">
+            <div class="box-pequeño-projects-1">
+                    <h3>Semana Santa de Sevilla</h3>
+                    <p>Pagina diseñada sobre todas las hermandades de la Semana Santa Sevilla. Todas las informaciones de cada hermandad.</p>
+                    <p>Desarrollado con las siguientes herramientas:</p>
+                <div class="herramientas-projects-1">
+                    <img src="/Astro_dark.svg" alt="Astro" id="herramientas-projects-1">
+                    <img src="/html5.svg" alt="Next" id="herramientas-projects-1">
+                    <img src="/css_old.svg" alt="Tailwind" id="herramientas-projects-1">
+                    <img src="/javascript.svg" alt="Javascript" id="herramientas-projects-1">
+                </div>
+                <div class="box-sitios-projects-1">
+                    <a href="https://github.com/AlvaroGR04/Portfolio" id="sitios-projects-1">
+                        <img src="/Github_dark.svg" alt="Github" id="sitios-image-projects-1">Code
+                    </a>
+                    <a href="https://semana-santa.vercel.app" id="sitios-projects-1">
+                        <img src="/Vercel_dark.svg" alt="Link" id="sitios-image-projects-1">Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #Projects{
+    padding: 5% 0% 5% 5%;
+    margin: 2% 20% 2% 20%;
+    border-radius: 50px;
+}
+
+    .box-size-projects-1{
+        display: flex;
+        align-items: flex-start;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    #img-proyecto1{
+        width: 45%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    .box-pequeño-projects-1{
+        margin: 0% 0% 0% 5%;
+    }
+
+    h3{
+        margin: 0.1em 0em 1em 0em;
+    }
+
+    p{
+        margin: 1% 0% 2% 0%;
+    }
+
+    .herramientas-projects-1{
+        display: flex;
+        align-items: center;
+    }
+
+    .herramientas-projects-1 img{
+        width: 6%;
+        height: auto;
+        margin: 0% 2% 3% 4%;
+    }
+
+    .box-sitios-projects-1{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #sitios-projects-1{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 50px;
+        width: 22%;
+        height: 38px;
+        margin: 2% 5% 0% 0%;
+        background: rgb(48, 45, 45, 0.7);
+        padding: 1% 2% 1% 2%;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    #sitios-projects-1:hover{
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    }
+
+    #sitios-image-projects-1{
+        width: 30%;
+        height: auto;
+        margin: 0% 5% 0% 0%;
+    }
+
+@media (max-width: 1200px) {
+    #Projects{
+    padding: 5% 0% 5% 0%;
+    margin: 2% 1% 2% 1%;
+    border-radius: 50px;
+}
+
+    #sitios-projects-1{
+        width: 30%;
+        height: 30px;
+        margin: 2% 3% 0% 0%;
+        background: rgb(48, 45, 45, 0.7);
+        padding: 1% 2% 1% 2%;
+    }
+
+    #sitios-image-projects-1{
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #Projects{
+    padding: 5% 0% 5% 5%;
+    margin: 2% 1% 2% 1%;
+    border-radius: 50px;
+}
+
+.box-size-projects-1{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start ;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    #img-proyecto1{
+        width:90%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        margin-bottom: 5%;
+    }
+
+    .herramientas-projects-1{
+        margin:5% 0% ;
+    }
+
+    .herramientas-projects-1 img{
+        width: 8%;
+    }
+
+    #sitios-projects-1{
+        width: 30%;
+        height: 30px;
+        margin: 2% 3% 0% 0%;
+        background: rgb(48, 45, 45, 0.7);
+        padding: 1% 2% 1% 2%;
+    }
+
+    #sitios-image-projects-1{
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    #Projects{
+    padding: 5% 0% 5% 5%;
+    margin: 2% 1% 2% 1%;
+    border-radius: 50px;
+}
+
+.box-size-projects-1{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start ;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    #img-proyecto1{
+        width:90%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        margin-bottom: 5%;
+    }
+
+    .herramientas-projects-1{
+        margin:5% 0% ;
+    }
+
+    .herramientas-projects-1 img{
+        width: 8%;
+    }
+
+    #sitios-projects-1{
+        width: 30%;
+        height: 30px;
+        margin: 2% 3% 0% 0%;
+        background: rgb(48, 45, 45, 0.7);
+        padding: 1% 2% 1% 2%;
+    }
+
+    #sitios-image-projects-1{
+        width: 20%;
+    }
+
+}
+</style>

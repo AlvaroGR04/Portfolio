@@ -1,20 +1,26 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
+
 ---
 <section id="box">
 	<div id="pequeño-nav">
 		☰ MENÚ
 	</div>
 	<div id="box-nav">
+			<a href="#Trabajos">Experiencia</a>
+			<a href="#Educacion">Formación</a>
+			<a href="#Projects">Proyectos</a>
 			<a href="#SobreMi">Sobre Mi</a>
-			<a href="">Proyectos</a>
-			<a href="">Titulos</a>
-			<a href="">Trabajos</a>
 	</div>
 </section>
 
 <style>
+	#box {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté encima del contenido */
+}
 	#box-nav{
 		background: rgb(48, 45, 45, 0.7);
 		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
@@ -27,9 +33,8 @@ import background from '../assets/background.svg';
 
 	#box-nav a{
 		text-decoration: none;
-		color:black;
+		color: white;
 		text-transform:uppercase;
-		font-family: 'Courier New', Courier, monospace;
 	}
 
 	#box-nav a:hover{
@@ -64,13 +69,23 @@ import background from '../assets/background.svg';
 	}
 
 	@media (max-width: 425px) {
+
+		#box{
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 		#pequeño-nav{
-			background: rgb(48, 45, 45, 0.7);
+			background: rgb(0, 0, 0);
 			font-size: 150%;
 			padding: 5% 0% 5% 5%;
 		}
 
 		#box-nav{
+			background: rgb(0, 0, 0);
+			font-size: 150%;
+			padding: 5% 0% 5% 5%;
 			flex-direction: column;
 			margin: 0% 55% 1% 0%;
 			padding: 2% 0% 5% 5% ;

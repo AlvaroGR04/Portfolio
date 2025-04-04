@@ -1,54 +1,17 @@
 ---
+import Projects from '../components/Projects.astro';
+import Hero from '../components/Hero.astro';
 import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
 import '../styles/index.css'
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Educacion from '../components/Educacion.astro';
 ---
 
 <Layout>
-	<section id="box">
-		<div id="pequeño-nav">
-			☰ MENÚ
-		</div>
-		<div id="box-nav">
-				<a href="#SobreMi">Sobre Mi</a>
-				<a href="#Proyectos">Proyectos</a>
-				<a href="#Titulos">Titulos</a>
-				<a href="#Trabajos">Trabajos</a>
-		</div>
-	</section>
-	<div id="SobreMi">
-		<div class="boxsobremi1">
-			<img src="/me.jpeg" alt="me" id="me">
-			<a href="https://www.linkedin.com/in/álvaro-gallardo-rodríguez-314aa9329/">
-				<img src="/linkedin.svg" alt="Linkedin" id="linkedin">
-			</a>
-		</div>
-		<h2>Álvaro Gallardo Rodríguez</h2>
-		<div class="texto">
-				Nuevo Web Developer. Tecnico de Sistemas Microinformaticos y Redes de Sevilla, España. Actualmente terminando el Grado Superior de Desarrollo de Aplicaciones Web. 
-		</div>
-	</div>
-	<div id="Proyectos">
-		<h1>Proyectos.</h1>
-		<div id="proyecto1">
-			<h3>Semana Santa de Sevilla</h3>
-			<p>Pagina diseñada sobre todas las hermandades de la Semana Santa Sevilla. Todas las informaciones de cada hermandad.</p>
-			<a href="https://github.com/AlvaroGR04/Portfolio">
-				<img src="/Github_light.svg" alt="Github" id="github">Code
-			</a>
-			<a href="https://semana-santa.vercel.app">
-				<img src="/Vercel_light.svg" alt="Link" id="link">Website
-			</a>
-		</div>
-	</div>
-	<div id="Titulos">
-		<h1>Titulos.</h1>
-		<p>Titulacion de la Enseñanza Secundaria Obligatoria</p>
-		<p>Grado Medio de Sistema Microinformaticos y Redes</p>
-		<p>Grado Superior de Desarrollo de Aplicaciones Web</p>
-	</div>
+		<Nav />
+		<Hero />
+		<Projects />
+		<Educacion />
 	<div id="Trabajos">
 		<h1>Trabajos.</h1>
 	</div>
@@ -57,32 +20,5 @@ import '../styles/index.css'
 </Layout>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const menuIcon = document.getElementById('pequeño-nav');
-        const menuItems = document.getElementById('box-nav');
-
-        if (!menuIcon || !menuItems) {
-            console.warn("Elementos del menú no encontrados en el DOM.");
-            return;
-        }
-
-        function updateMenuDisplay() {
-            if (window.innerWidth <= 600) {
-                if (menuIcon) menuIcon.style.display = 'block';
-                if (menuItems) menuItems.style.display = 'none';
-            } else {
-                if (menuIcon) menuIcon.style.display = 'none';
-                if (menuItems) menuItems.style.display = 'flex';
-            }
-        }
-
-        menuIcon.addEventListener('click', () => {
-            if (menuItems) {
-                menuItems.style.display = (menuItems.style.display === 'flex') ? 'none' : 'flex';
-            }
-        });
-
-        window.addEventListener('resize', updateMenuDisplay);
-        updateMenuDisplay(); // Ejecutar al cargar la página
-    });
+    
 </script>

@@ -1,0 +1,113 @@
+---
+
+---
+
+<div id="Hero">
+    <div class="box-hero">
+        <img src="/me.jpeg" alt="me" id="me-hero">
+        <a href="https://www.linkedin.com/in/álvaro-gallardo-rodríguez-314aa9329/">
+            <img src="/linkedin.svg" alt="Linkedin" id="linkedin-hero">
+        </a>
+    </div>
+    <h2>Álvaro Gallardo Rodríguez</h2>
+    <div class="texto-hero">
+            Nuevo Web Developer. Tecnico de Sistemas Microinformaticos y Redes de Sevilla, España. Actualmente terminando el Grado Superior de Desarrollo de Aplicaciones Web. 
+    </div>
+</div>
+
+<style>
+    #Hero{
+    padding: 5% 0% 5% 5%;
+    margin: 2% 20% 2% 20%;
+    border-radius: 50px;
+    font-size: 140%;
+}
+
+#Hero h2::after{
+    content: ".";
+    color: rgba(19, 59, 179);
+    font-size: 150%;
+
+}
+.box-hero{
+    display: flex;
+    align-items: center;
+}
+
+#me-hero{
+    width: 10%;
+    height: 10%;
+    margin: 0% 1% 0% 0%;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+#linkedin-hero{
+    width: 17%;
+    height: 10%;
+    margin: 2% 0% 0% 1%;
+    border-radius: 20%;
+    box-shadow: 0 8px 15px rgba(19, 59, 179, 0.8);
+    justify-content: center;
+}
+
+#linkedin-hero:hover{
+    transform: scale(1.20); /* Aumenta ligeramente el tamaño */
+}
+
+.texto-hero{
+    margin: 0% 30% 0% 0%;
+}
+
+@media (max-width: 810px) {
+    #Hero{
+        padding: 5% 0% 5% 5%;
+        margin: 2% 10% 2% 10%;
+        border-radius: 50px;
+        font-size: 120%;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    #Hero{
+        padding: 5% 0% 5% 5%;
+        margin: 2% 5% 2% 5%;
+        border-radius: 50px;
+        font-size: 120%;
+        
+    }
+}
+
+@media (max-width: 425px) {
+
+    #Hero{
+        padding: 5% 0% 5% 5%;
+        margin: 2% 5% 2% 5%;
+        border-radius: 50px;
+        font-size: 120%;
+        
+    }
+
+    #me-hero{
+        width: 20%;
+        height: 20%;
+        margin: 0% 1% 0% 0%;
+        border-radius: 50%;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    #linkedin-hero{
+        width: 15%;
+        height: 20%;
+        margin: 2% 0% 0% 1%;
+        border-radius: 20%;
+        box-shadow: 0 8px 15px rgba(19, 59, 179, 0.8);
+        justify-content: center;
+    }
+    
+    .texto-hero{
+        margin: 0% 5% 0% 0%;
+    }
+}
+</style>
