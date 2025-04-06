@@ -1,0 +1,143 @@
+<div id="SobreMi">
+    <h1 id="title"><img src="/user.png" alt="imagen-user">Sobre Mi.</h1>
+    <div class="sub-caja">
+        <div class="texto">
+            <p>
+                Buenas me llamo <strong id="color-texto">Álvaro Gallardo Rodríguez</strong>. Empece en el mundo de la informatica en 2020, 
+                a traves de meterme en un grado medio de <strong id="color-texto">sistemas microninromaticos y redes</strong> en el cual vi un mundo nuevo,
+                el cual me dio querer conocer mas sobre la informatica
+            </p>
+            <p>
+                En 2023 una vez acabado el curso en diciembre de 2022, me tendria que esperar al siguiente curso para poder apuntarme al 
+                grado superior de <strong id="color-texto">desarrollo de aplicaciones multiplataforma</strong>.
+            </p>
+            <p>
+                Sin embargo, aparte de aprender en los grados durante 4 años y 9 meses, me gusta aprender por mi cuenta, ya que a la hora de aprender
+                por mi,<strong id="color-texto"> aprendo a mi ritmo y a lo que me gusta haciendo proyectos personales</strong> relacionados con mis aficiones como es la semana santa.
+            </p>
+            <p>
+                <strong id="color-texto">Actualmente tengo conocimientos en las siguientes herramientas:</strong>
+            </p>
+            <div class="herramientas-sobre-mi">
+                <img src="/html5.svg" alt="Next" id="herramientas-sobre-mi">
+                <img src="/css_old.svg" alt="Tailwind" id="herramientas-sobre-mi">
+                <img src="/javascript.svg" alt="Javascript" id="herramientas-sobre-mi">
+                <img src="/Astro_dark.svg" alt="Astro" id="herramientas-sobre-mi">
+                <img src="/React_light.svg" alt="React" id="herramientas-sobre-mi">
+                <img src="/angular.svg" alt="Angular" id="herramientas-sobre-mi">
+                <img src="/mysql.svg" alt="Mysql" id="herramientas-sobre-mi">
+                <img src="/postman.svg" alt="Postman" id="herramientas-sobre-mi">
+                <img src="/wordpress.svg" alt="Wordpress" id="herramientas-sobre-mi">
+                <img src="/Github_dark.svg" alt="Github" id="herramientas-sobre-mi">
+                <img src="/Vercel_dark.svg" alt="Vercel" id="herramientas-sobre-mi">
+                <img src="/Markdown_dark.svg" alt="Markdown" id="herramientas-sobre-mi">
+            </div>
+        </div>
+        <div class="foto">
+            <img src="/me.jpeg" alt="yo" id="foto-sobre-mi">
+        </div>
+    </div>
+</div>
+
+<style>
+        #SobreMi {
+        padding: 5% 0% 5% 5%;
+        margin: 2% 20% 2% 20%;
+        border-radius: 50px;
+    }
+
+    #title{
+        display: flex;
+        align-items: center;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    #title img{
+        width: 5%;
+        height: auto;
+        margin: 0% 1% 0% 0%;
+    }
+
+    .sub-caja {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #color-texto {
+        color: #88A9C3;
+    }
+
+    .texto {
+        width: 70%;
+        margin: 0% 2% 0% 0%;
+        font-size: 1rem;
+    }
+
+    .herramientas-sobre-mi img {
+        width: 40px;
+        height: auto;
+        margin-right: 2%;
+    }
+
+    .foto {
+        width: 30%;
+    }
+
+    #foto-sobre-mi {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50px;
+    }
+
+    @media (max-width: 964px) {
+        #SobreMi {
+        padding: 5% 0% 5% 5%;
+        margin: 2% 10% 2% 10%;
+        border-radius: 50px;
+        }
+
+        #title img{
+        width: 7%;
+        height: auto;
+        margin: 0% 2% 0% 0%;
+    }
+    }
+
+    @media (max-width: 600px) {
+        #title img{
+        width: 18%;
+        height: auto;
+        margin: 0% 3% 0% 0%;
+    }
+
+        .sub-caja {
+        flex-direction: column-reverse;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .herramientas-sobre-mi img {
+        width: 40px;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .foto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #foto-sobre-mi {
+        width: 100%;
+        max-width: 250px;
+    }
+
+</style>
